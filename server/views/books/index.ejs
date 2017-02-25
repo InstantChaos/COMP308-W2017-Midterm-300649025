@@ -1,3 +1,9 @@
+<!-- 
+File name: index.ejs
+author: Franco Chong
+student id: 300649025
+webapp name: Books list midterm -->
+
 <% include ../partials/header.ejs %>
 
     <!-- MAIN CONTENT -->
@@ -43,6 +49,8 @@
                     <!-- ------------------------ -->
                     <!-- ADD the DELETE BUTTON HERE -->
                     <!-- ------------------------ -->
+                    <a href="/books/delete/<%= books[count]._id %>" class="btn btn-danger">
+                    <i class="fa fa-trash-o"></i>Delete</a>
                   </td>
                 </tr>
                 <% } %>
