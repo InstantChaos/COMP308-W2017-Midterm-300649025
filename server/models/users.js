@@ -16,6 +16,7 @@ let UserSchema = new Schema({
         trim: true,
         required: 'Username is required'
     },
+    
     email:{
         type: String,
         default: '',
